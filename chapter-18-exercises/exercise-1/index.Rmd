@@ -1,0 +1,20 @@
+---
+title: "Book Review"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("exercise.R")
+```
+# **`r book_name`**
+
+## Review summary
+
+> `r short_summary`
+
+```{r link, include = FALSE}
+link_markdown <- paste0("[article](", link_to_article, ")")
+```
+
+More in NYT `r link_markdown`
